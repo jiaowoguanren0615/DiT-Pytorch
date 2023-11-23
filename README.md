@@ -6,7 +6,7 @@
 This code mainly comes from facebookresearch official source code (https://github.com/facebookresearch/DiT/). Before you use the code to train your own data set, please first enter the ___train_gpu.py___ file and modify the ___data_path___, ___global-batch-size___ and ___num-classes___ parameters. 
 
 ## Use Sophia Optimizer (in util/optimizer.py)
-You can use anther optimizer sophia, just need to change the optimizer in ___train_gpu.py___, for this training sample, can achieve better results
+You can use anther optimizer sophia, just need to change the optimizer in ___train_gpu.py___.
 ```
 # opt = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0)
 opt = SophiaG(model.parameters(), lr=2e-4, betas=(0.965, 0.99), rho=0.01, weight_decay=0)
